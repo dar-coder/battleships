@@ -1,13 +1,11 @@
 import random
 from time import sleep
 
-
 def main():
 
 	# Generating list which consists of 10 lists, each of which has 10 zroes in it.
 	mapa = [[0] * 10 for i in range(10)]
 	
-
 	print()
 	print("**** BATTLESHIPS ****")
 	print()
@@ -28,7 +26,6 @@ def main():
 	battle(mapa)
 	
 
-
 def printIndexes():
 	"""Prints the column indexes with two white spaces at the begining and at the end."""
 	
@@ -44,12 +41,12 @@ def printMap(mapa):
 		VALUE LEGEND:
 
 		0 - Empty field
-        1 - Location of the user ship (print '@' on map)
-        2 - Location of the computer ship (hidden from map)
-        3 - Computer ship is sunk (print '!' on map)
-        4 - User ship is sunk (print 'x' on map)
-        5 - User missed (print '-' on map)
-        6 - Computer missed (hidden from map)"""
+        	1 - Location of the user ship (print '@' on map)
+        	2 - Location of the computer ship (hidden from map)
+        	3 - Computer ship is sunk (print '!' on map)
+        	4 - User ship is sunk (print 'x' on map)
+        	5 - User missed (print '-' on map)
+        	6 - Computer missed (hidden from map)"""
 
 	print()
 	printIndexes()
@@ -177,12 +174,12 @@ def battle(mapa):
 		# VALUE LEGEND:
 
 		# 0 - Empty field
-        # 1 - Location of the user ship (print '@' on map)
-        # 2 - Location of the computer ship (hidden from map)
-        # 3 - Computer ship is sunk (print '!' on map)
-        # 4 - User ship is sunk (print 'x' on map)
-        # 5 - User missed (print '-' on map)
-        # 6 - Computer missed (hidden from map)
+        	# 1 - Location of the user ship (print '@' on map)
+        	# 2 - Location of the computer ship (hidden from map)
+        	# 3 - Computer ship is sunk (print '!' on map)
+        	# 4 - User ship is sunk (print 'x' on map)
+        	# 5 - User missed (print '-' on map)
+        	# 6 - Computer missed (hidden from map)
 		
 		if mapa[row][column] == 1:
 			mapa[row][column] = 3
@@ -234,7 +231,6 @@ def battle(mapa):
 		print("THE COMPUTER WON!")
 	else:
 		print("IT'S A TIE!")	
-
 
 
 if __name__=="__main__":
